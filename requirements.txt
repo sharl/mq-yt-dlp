@@ -1,0 +1,7 @@
+pystray
+requests
+bs4
+pika
+pyperclip
+darkdetect
+sv_ttk
