@@ -6,7 +6,7 @@ copy the target URL, yt-dlp will automatically start the download
 
 ### WSL
 ```
-brew install deno yt-dlp
+brew install deno yt-dlp ffmpeg
 git clone https://github.com/sharl/mq-yt-dlp.git
 cd mq-yt-dlp
 docker compose up -d
