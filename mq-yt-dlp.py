@@ -295,7 +295,12 @@ class Consumer:
                         app.update_menu()
 
                         start = time.time()
-                        r = subprocess.run(['wsl', '/home/linuxbrew/.linuxbrew/bin/yt-dlp', '-q', f"'{url}'"], stderr=subprocess.DEVNULL)
+                        r = subprocess.run(
+                            ['wsl', '/home/linuxbrew/.linuxbrew/bin/yt-dlp', '-q', f"'{url}'"],
+                            stdout=subprocess.DEVNULL,
+                            stderr=subprocess.DEVNULL,
+                            creationflags=subprocess.CREATE_NO_WINDOW,
+                        )
                         end = time.time()
 
                         print(r)
